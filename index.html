@@ -1,0 +1,59 @@
+<!doctype html>
+<!--
+Author: Dave Eddy <dave@daveeddy.com>
+Date: November 11, 2020
+License: MIT
+-->
+<html>
+	<head>
+		<title>Lost Corridors by Dave Eddy</title>
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				background-color: #000;
+				color: #ccc;
+				font-family: monospace;
+			}
+			a {
+				color: #55b;
+			}
+			#canvas {
+				border: 2px solid #333;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Lost Corridors</h1>
+
+		<canvas id="canvas"></canvas>
+
+		<br><br>
+
+		canvas size: <input type="text" placeholder="512x288" value="512x288" id="canvas-size-input"></input><br><br>
+		maze size: <input type="text" placeholder="16x9" value="16x9" id="maze-size-input"></input><br><br>
+		animation delay (ms): <input type="text" placeholder="50" value="50" id="animation-delay-input"></input><br><br>
+		background color: <input type="text" placeholder="black" value="black" id="background-color-input"></input><br><br>
+		maze color: <input type="text" placeholder="gray" value="gray" id="maze-color-input"></input><br><br>
+
+		<button id="save-button">save settings</button>
+		<button id="step-button">step</button>
+		<button id="animate-button">animate</button>
+		<button id="reset-button">reset</button>
+
+		<br><br>
+		<br><br>
+		&copy; Dave Eddy (<a href="https://daveeddy.com">www.daveeddy.com</a>) 2020
+
+		<pre><code>
+An implementation of the Recursive Backtracking Maze Generation Algorithm
+modified to work in a step-by-step way.
+More info: <a href="https://weblog.jamisbuck.org/2010/12/27/maze-generation-recursive-backtracking">https://weblog.jamisbuck.org/2010/12/27/maze-generation-recursive-backtracking</a>
+		</code></pre>
+
+
+		<script src="./lib/maze.js"></script>
+		<script src="./lib/canvas.js"></script>
+	</body>
+</html>
