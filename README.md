@@ -7,7 +7,11 @@ Algorithm modified to work in a step-by-step way.
 About
 -----
 
-More information coming soon!
+https://bahamas10.github.io/lost-corridors/
+
+I wrote this code specifically for a song I made!  Check out the song here:
+
+https://www.youtube.com/watch?v=RCjLs9koZQg
 
 `Maze` object
 --------------
